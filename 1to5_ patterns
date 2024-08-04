@@ -1,0 +1,105 @@
+
+class Pat_1to5
+{
+	public static void Pt1()
+	{
+		for(int i=0;i<5;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				System.out.print("* ");
+			}
+		System.out.println();
+		}
+
+	}
+	public static void Pt2()
+	{
+		for(int i=0;i<=4;i++)
+		{
+			for(int j=0;j<i;j++)
+			{
+				System.out.print("* ");
+			}
+		System.out.println();
+		}
+	}
+	public static void Pt3()
+	{
+		for(int i=4;i>=1;i--)
+		{
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+		System.out.println();
+		}
+	}
+	public static void Pt4()
+	{
+		for(int l=1;l<=4;l++)
+		{
+			for(int s=1;s<l;s++)
+			{
+				System.out.print(" ");
+			}
+			for(int a=4;a>=l;a--)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	public static void Pt5()
+	{
+		
+		int n=5;
+		int m=5;
+		for(int i =1;i<=n;i++)
+		{
+			for(int j=1;j<=m;j++)
+			{
+				if(i==1||j==1||j==m || i==n)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public static void Pt6()
+	{
+		for(int l=1;l<=4;l++)
+		{
+			for(int s=1;s<l;s++)
+			{
+				System.out.print(" ");
+			}
+			for(int a=4;a>=l;a--)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	public static void main(String args[])
+	{
+		System.out.println("1 to n patterns : ");
+		System.out.println();
+		Pt1();
+		System.out.println();
+		Pt5();
+		System.out.println();
+		Pt3();
+		System.out.println();
+		Pt4();
+		System.out.println();
+		Pt2();
+		System.out.println();
+		Pt6();
+	}
+}
